@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4C25345F-AFED-A437-2D84-3A4084CAC17C" name="archive_arch_rent_films_FK">
+<createdBy>olpch</createdBy>
+<createdTime>2021-12-06 21:08:34 UTC</createdTime>
+<generatorID>601E0DEA-CEBD-809A-F28B-96EF2C0DCA98</generatorID>
+<ownerDesignName>бдархив</ownerDesignName>
+<containerWithKeyObject>812B2C74-76C0-E631-1655-CF34149CF468</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>67ED1CC0-2CAD-A4D5-D7ED-2B284FB7F288</localFKIndex>
+<keyObject>89F98952-AD8A-F55C-E048-0DB39CEA0281</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

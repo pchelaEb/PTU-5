@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="812B2C74-76C0-E631-1655-CF34149CF468" name="archive">
+<createdBy>olpch</createdBy>
+<createdTime>2021-11-09 10:07:06 UTC</createdTime>
+<ownerDesignName>бдархив</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_recording" id="475A1B5C-7442-9DAA-D02B-0FF6285F4857">
+<createdBy>olpch</createdBy>
+<createdTime>2021-12-06 21:08:34 UTC</createdTime>
+<generatorID>C1049917-555D-E14E-5911-8D6F6D1BF47D</generatorID>
+<ownerDesignName>бдархив</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="proceeds" id="CA04C336-64AA-D25C-AFAE-9B5488447EEC">
+<createdBy>olpch</createdBy>
+<createdTime>2021-12-06 21:08:34 UTC</createdTime>
+<generatorID>BA3077EB-A046-BECD-2032-4E70B2632334</generatorID>
+<ownerDesignName>бдархив</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="room_occupancy" id="786F9648-A94B-F514-4734-A13891069558">
+<createdBy>olpch</createdBy>
+<createdTime>2021-12-06 21:08:34 UTC</createdTime>
+<generatorID>FC7DB9A4-1450-D6A0-AAE8-8EA964E46788</generatorID>
+<ownerDesignName>бдархив</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="session_date" id="0431363E-0172-B11D-BBC1-19638E81B965">
+<createdBy>olpch</createdBy>
+<createdTime>2021-12-06 21:08:34 UTC</createdTime>
+<generatorID>9C15CFD6-3C92-5329-B70E-8998AC238919</generatorID>
+<ownerDesignName>бдархив</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="session_hour" id="217D81AD-C073-49DB-D947-81C5F42B0832">
+<createdBy>olpch</createdBy>
+<createdTime>2021-12-06 21:08:34 UTC</createdTime>
+<generatorID>B0DA3C55-31E6-5D21-F4F4-6714E0272E26</generatorID>
+<ownerDesignName>бдархив</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="session_minute" id="2F35F9B3-3FB5-46D0-1CDD-2CC1FA8B23E0">
+<createdBy>olpch</createdBy>
+<createdTime>2021-12-06 21:08:34 UTC</createdTime>
+<generatorID>C6EE86F8-1367-2E5A-60BF-DF1BF16AC595</generatorID>
+<ownerDesignName>бдархив</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="week_day" id="61F52937-87C6-FDC6-336E-75FFE5BFB1AE">
+<createdBy>olpch</createdBy>
+<createdTime>2021-12-06 21:08:34 UTC</createdTime>
+<generatorID>31C084ED-B2A6-AAEE-9675-995B078A1C76</generatorID>
+<ownerDesignName>бдархив</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="arch_rent_films_ID_rent" id="B3ADA15A-9BF6-DAF7-4C25-BDF4C268D66C">
+<createdBy>olpch</createdBy>
+<createdTime>2021-12-06 21:08:34 UTC</createdTime>
+<generatorID>34B0F6F4-9D18-5123-0FAD-021E1BC29FD8</generatorID>
+<ownerDesignName>бдархив</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<delegate>E63E9DBA-406F-AB73-1C89-AA2771CA18EF</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4C25345F-AFED-A437-2D84-3A4084CAC17C" referredColumn="E63E9DBA-406F-AB73-1C89-AA2771CA18EF"/>
+</associations>
+</Column>
+<Column name="arch_films_ID_film" id="5D7D5009-EEBD-9D46-B3F4-AE233EC33A0C">
+<createdBy>olpch</createdBy>
+<createdTime>2021-12-06 21:08:34 UTC</createdTime>
+<generatorID>96BAEA2B-30C4-4499-B731-ED1339F5D89A</generatorID>
+<ownerDesignName>бдархив</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<delegate>4116AD2F-BC1F-0C6F-9C4B-71500A2C17F0</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E28BF89-E796-CDAD-3FD3-86CAA91DFA16" referredColumn="4116AD2F-BC1F-0C6F-9C4B-71500A2C17F0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C27D8209-69A3-B055-5BA5-A4C3E705A5D6" name="archive_PK">
+<createdBy>olpch</createdBy>
+<createdTime>2021-12-06 21:08:34 UTC</createdTime>
+<generatorID>B9EA0795-AB10-05D5-A997-8C353B559DCD</generatorID>
+<ownerDesignName>бдархив</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="475A1B5C-7442-9DAA-D02B-0FF6285F4857"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="67ED1CC0-2CAD-A4D5-D7ED-2B284FB7F288" name="archive_arch_rent_films_FK">
+<createdBy>olpch</createdBy>
+<createdTime>2021-12-06 21:08:34 UTC</createdTime>
+<generatorID>601E0DEA-CEBD-809A-F28B-96EF2C0DCA98</generatorID>
+<ownerDesignName>бдархив</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3ADA15A-9BF6-DAF7-4C25-BDF4C268D66C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE73E5D9-67C9-32F9-C598-B0CE0A0C8DEE" name="archive_arch_films_FK">
+<createdBy>olpch</createdBy>
+<createdTime>2021-12-06 21:08:34 UTC</createdTime>
+<generatorID>7C3B5A8D-3F23-CA40-1DB6-3A25C567D5DD</generatorID>
+<ownerDesignName>бдархив</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D7D5009-EEBD-9D46-B3F4-AE233EC33A0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

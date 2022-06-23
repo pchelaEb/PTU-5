@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A9094A70-0563-C3D6-C488-00B5BCF7DFE8" name="arch_rent_films">
+<createdBy>olpch</createdBy>
+<createdTime>2021-11-09 10:20:52 UTC</createdTime>
+<ownerDesignName>бдархив</ownerDesignName>
+<engineerTo>
+<item key="911745BD-8D19-2BDD-7D20-42C7784E4DC0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_rent" id="21BD6B76-1EA8-7B01-79AF-A127D4B6B7EA">
+<createdBy>olpch</createdBy>
+<createdTime>2021-11-09 10:20:52 UTC</createdTime>
+<ownerDesignName>бдархив</ownerDesignName>
+<importedID>374602D9-B756-3AA8-3A0B-EE2D4552BBC2</importedID>
+<engineerTo>
+<item key="911745BD-8D19-2BDD-7D20-42C7784E4DC0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+</Attribute>
+<Attribute name="start_date" id="AB15414E-483F-34F0-F5BC-D01AF61AB7F9">
+<createdBy>olpch</createdBy>
+<createdTime>2021-11-09 10:20:52 UTC</createdTime>
+<ownerDesignName>бдархив</ownerDesignName>
+<importedID>9F788798-25E5-319F-146C-9119E49765FB</importedID>
+<engineerTo>
+<item key="911745BD-8D19-2BDD-7D20-42C7784E4DC0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="end_date" id="8D0FE976-85F8-18B0-4672-D576F0EEFD66">
+<createdBy>olpch</createdBy>
+<createdTime>2021-11-09 10:20:52 UTC</createdTime>
+<ownerDesignName>бдархив</ownerDesignName>
+<importedID>762A412A-D7C4-F371-9E04-77A9DF3517F9</importedID>
+<engineerTo>
+<item key="911745BD-8D19-2BDD-7D20-42C7784E4DC0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="box_office" id="056C81DB-CE55-FD60-94FA-F0259335C8A0">
+<createdBy>olpch</createdBy>
+<createdTime>2021-11-09 10:20:52 UTC</createdTime>
+<ownerDesignName>бдархив</ownerDesignName>
+<importedID>0AE58497-0640-2E80-C55B-6A8127AB97A0</importedID>
+<engineerTo>
+<item key="911745BD-8D19-2BDD-7D20-42C7784E4DC0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>50</dataTypePrecision>
+</Attribute>
+<Attribute name="number_sessions" id="AF6A4B87-976B-2349-F790-3DD2B292EB03">
+<createdBy>olpch</createdBy>
+<createdTime>2021-11-09 10:20:52 UTC</createdTime>
+<ownerDesignName>бдархив</ownerDesignName>
+<importedID>B3BE0BB1-3E5E-C181-B495-E9F0C1453154</importedID>
+<engineerTo>
+<item key="911745BD-8D19-2BDD-7D20-42C7784E4DC0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+</Attribute>
+<Attribute name="ID_film" id="706E0177-4084-44F1-5C45-45B3177DDD4A">
+<createdBy>olpch</createdBy>
+<createdTime>2021-11-09 10:20:52 UTC</createdTime>
+<ownerDesignName>бдархив</ownerDesignName>
+<importedID>D7DD0A6B-2E25-47A2-07B1-A97CC5E68661</importedID>
+<engineerTo>
+<item key="911745BD-8D19-2BDD-7D20-42C7784E4DC0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BFC3E5A0-0A6E-AC2C-AAF5-C75A323F4834" name="rent_films PK">
+<createdBy>olpch</createdBy>
+<createdTime>2021-11-09 10:20:52 UTC</createdTime>
+<ownerDesignName>бдархив</ownerDesignName>
+<engineerTo>
+<item key="911745BD-8D19-2BDD-7D20-42C7784E4DC0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>21BD6B76-1EA8-7B01-79AF-A127D4B6B7EA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

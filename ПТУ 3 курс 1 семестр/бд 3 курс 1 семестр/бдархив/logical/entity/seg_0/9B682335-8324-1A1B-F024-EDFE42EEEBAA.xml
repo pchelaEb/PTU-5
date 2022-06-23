@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9B682335-8324-1A1B-F024-EDFE42EEEBAA" name="arch_films">
+<createdBy>olpch</createdBy>
+<createdTime>2021-11-09 10:21:06 UTC</createdTime>
+<ownerDesignName>бдархив</ownerDesignName>
+<engineerTo>
+<item key="911745BD-8D19-2BDD-7D20-42C7784E4DC0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_film" id="843B2BDD-4724-E45E-C9C0-AC3F9D5BC722">
+<createdBy>olpch</createdBy>
+<createdTime>2021-11-09 10:21:06 UTC</createdTime>
+<ownerDesignName>бдархив</ownerDesignName>
+<importedID>2AB00D03-FD6F-16D9-9E78-D0C3E273D86F</importedID>
+<engineerTo>
+<item key="911745BD-8D19-2BDD-7D20-42C7784E4DC0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+</Attribute>
+<Attribute name="title_film" id="061A0BF6-0EFE-9F9E-B923-49FC7C498FF1">
+<createdBy>olpch</createdBy>
+<createdTime>2021-11-09 10:21:06 UTC</createdTime>
+<ownerDesignName>бдархив</ownerDesignName>
+<importedID>BAE23371-AA4A-83FE-CD57-20F7DC5472DA</importedID>
+<engineerTo>
+<item key="911745BD-8D19-2BDD-7D20-42C7784E4DC0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="duration" id="840661A7-A410-9731-E1B8-9FA6A8B83518">
+<createdBy>olpch</createdBy>
+<createdTime>2021-11-09 10:21:06 UTC</createdTime>
+<ownerDesignName>бдархив</ownerDesignName>
+<importedID>AE1FA5F4-E2B5-760F-6A92-BDE8BED8956B</importedID>
+<engineerTo>
+<item key="911745BD-8D19-2BDD-7D20-42C7784E4DC0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+</Attribute>
+<Attribute name="age_limit" id="D3F34263-6385-FF8E-6B27-1F92EEF08D89">
+<createdBy>olpch</createdBy>
+<createdTime>2021-11-09 10:21:06 UTC</createdTime>
+<ownerDesignName>бдархив</ownerDesignName>
+<importedID>90D2CE27-9E4B-1828-F8D2-87CCC499C96A</importedID>
+<engineerTo>
+<item key="911745BD-8D19-2BDD-7D20-42C7784E4DC0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+</Attribute>
+<Attribute name="ID_ganre" id="7A062447-F17E-C81D-9477-9016D876879C">
+<createdBy>olpch</createdBy>
+<createdTime>2021-11-09 10:21:06 UTC</createdTime>
+<ownerDesignName>бдархив</ownerDesignName>
+<importedID>F7BCC786-042D-E1E9-038A-1239708F601C</importedID>
+<engineerTo>
+<item key="911745BD-8D19-2BDD-7D20-42C7784E4DC0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="79487741-0F72-A985-9C9E-172B8EA20A21" name="films PK">
+<createdBy>olpch</createdBy>
+<createdTime>2021-11-09 10:21:06 UTC</createdTime>
+<ownerDesignName>бдархив</ownerDesignName>
+<engineerTo>
+<item key="911745BD-8D19-2BDD-7D20-42C7784E4DC0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>843B2BDD-4724-E45E-C9C0-AC3F9D5BC722</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

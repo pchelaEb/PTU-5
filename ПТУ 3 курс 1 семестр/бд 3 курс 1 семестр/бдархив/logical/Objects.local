@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="9B682335-8324-1A1B-F024-EDFE42EEEBAA" name="arch_films" seqName="seg_0"/>
+   <object objectType="Entity" objectID="A9094A70-0563-C3D6-C488-00B5BCF7DFE8" name="arch_rent_films" seqName="seg_0"/>
+   <object objectType="Entity" objectID="60D41878-B091-C564-0AC5-D427863E3FA0" name="archive" seqName="seg_0"/>
+   <object objectType="Relation" objectID="601E0DEA-CEBD-809A-F28B-96EF2C0DCA98" name="Relation_1" seqName="seg_0"/>
+   <object objectType="Relation" objectID="7C3B5A8D-3F23-CA40-1DB6-3A25C567D5DD" name="Relation_2" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

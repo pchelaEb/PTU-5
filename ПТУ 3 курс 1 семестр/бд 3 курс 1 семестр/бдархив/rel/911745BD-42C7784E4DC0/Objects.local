@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="6BFD3529-E778-7443-3970-D54AAF5C3679" name="arch_films" seqName="seg_0"/>
+   <object objectType="Table" objectID="917C49E1-1B4E-ECE1-E719-C754EDD7A028" name="arch_rent_films" seqName="seg_0"/>
+   <object objectType="Table" objectID="812B2C74-76C0-E631-1655-CF34149CF468" name="archive" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="0E28BF89-E796-CDAD-3FD3-86CAA91DFA16" name="archive_arch_films_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="4C25345F-AFED-A437-2D84-3A4084CAC17C" name="archive_arch_rent_films_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

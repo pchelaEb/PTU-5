@@ -1,0 +1,1 @@
+insert into GENRES(NAME_GENRES) VALUES ('Комедия');

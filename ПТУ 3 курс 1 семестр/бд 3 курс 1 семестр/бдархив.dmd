@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="бдархив" id="4F1DC2F3-9C57-9362-6531-C3C07A4ECCB2" version="3.5">
+<createdBy>olpch</createdBy>
+<createdTime>2021-11-09 10:05:25 UTC</createdTime>
+<ownerDesignName>бдархив</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>4F1DC2F3-9C57-9362-6531-C3C07A4ECCB2</designId>
+</OSDM_Design>

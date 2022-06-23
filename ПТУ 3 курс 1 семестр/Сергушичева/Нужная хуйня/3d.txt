@@ -1,0 +1,92 @@
+off = 0.5;
+// cube
+Lx = 2; Ly = 2; Lz = 2;
+usel = [0,0,0;1,0,0;0,1,0;0,0,1;1,1,0;0,1,1;1,0,1;1,1,1];
+Index_storona = [1,2,5,3; 1,3,6,4; 1,4,7,2; 4,7,8,6; 2,5,8,7; 3,6,8,5];
+n_storon = 6;
+for i_storona =1:n_storon
+storona_X(:,i_storona) = usel (Index_storona (i_storona,:), 1);
+storona_Y(:,i_storona) = usel (Index_storona (i_storona,:), 2);
+storona_Z(:,i_storona) = usel (Index_storona (i_storona,:), 3);
+end
+
+plot3d1(storona_X, storona_Y, storona_Z, style = color('red'));
+
+// sphere
+u = linspace(-%pi/2,%pi/2,40);
+v = linspace(0,2*%pi,20);
+X = cos(u)'*cos(v) + off
+Y = cos(u)'*sin(v) - off
+Z = sin(u)'*ones(v);
+
+plot3d1(X,Y,Z);
+
+// cilinder
+Radius = 0.8;
+Height = 1.5;
+number = 50;
+n_num=number;
+for i_usel=1:n_num  
+usel(i_usel,:)=[Radius*cos(2*%pi/n_num*i_usel) - off,Radius*sin(2*%pi/n_num*i_usel) - off,0];
+usel(n_num+i_usel,:) = [Radius*cos(2*%pi/n_num*i_usel) - off,Radius*sin(2*%pi/n_num*i_usel) - off,Height];
+end
+for i_pat=1:n_num-1
+Index_num1(i_pat,:) = [i_pat,i_pat+1,i_pat+1+n_num,i_pat+n_num];
+end
+Index_num1(n_num,:) = [n_num,1,1+n_num,2*n_num];
+for i_pat=1:n_num
+Patch1_X(:,i_pat) =usel(Index_num1(i_pat,:),1);
+Patch1_Y(:,i_pat) =usel(Index_num1(i_pat,:),2);
+Patch1_Z(:,i_pat) =usel(Index_num1(i_pat,:),3);
+end
+
+plot3d(Patch1_X,Patch1_Y,Patch1_Z);
+
+Index_num2(1,:) = [1:n_num];
+Index_num2(2,:) = [n_num+1:2*n_num];
+for i_pat=1:2
+Patch2_X(:,i_pat) = usel(Index_num2(i_pat,:),1);
+Patch2_Y(:,i_pat) = usel(Index_num2(i_pat,:),2);
+Patch2_Z(:,i_pat) = usel(Index_num2(i_pat,:),3);
+end
+
+plot3d(Patch2_X,Patch2_Y,Patch2_Z);
+
+// cone
+
+Radius = 0.8;
+Height = 1.5;
+number = 20;
+n_num=number;
+for i_usel=1:n_num  
+usel(i_usel,:)=[Radius*cos(2*%pi/n_num*i_usel) + off,Radius*sin(2*%pi/n_num*i_usel) + off,0];
+usel(n_num+i_usel,:) = [off,off,Height];
+end
+for i_pat=1:n_num-1
+Index_num1(i_pat,:) = [i_pat,i_pat+1,i_pat+1+n_num,i_pat+n_num];
+end
+Index_num1(n_num,:) = [n_num,1,1+n_num,2*n_num];
+for i_pat=1:n_num
+Patch1_X(:,i_pat) =usel(Index_num1(i_pat,:),1);
+Patch1_Y(:,i_pat) =usel(Index_num1(i_pat,:),2);
+Patch1_Z(:,i_pat) =usel(Index_num1(i_pat,:),3);
+end
+
+plot3d(Patch1_X,Patch1_Y,Patch1_Z);
+
+Index_num2(1,:) = [1:n_num];
+Index_num2(2,:) = [n_num+1:2*n_num];
+for i_pat=1:2
+Patch2_X(:,i_pat) = usel(Index_num2(i_pat,:),1);
+Patch2_Y(:,i_pat) = usel(Index_num2(i_pat,:),2);
+Patch2_Z(:,i_pat) = usel(Index_num2(i_pat,:),3);
+end
+
+plot3d(Patch2_X,Patch2_Y,Patch2_Z);
+
+// drawing
+
+e = gca();
+e.isoview = "on";
+e.data_bounds = [-3,-3,-3;3,3,3];
+

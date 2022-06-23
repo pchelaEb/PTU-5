@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelational" name="Relational_1" id="23F6B42E-D6DB-0061-701F-0AA6A3344938">
+<createdBy>olpch</createdBy>
+<createdTime>2021-11-09 10:05:51 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="6BFD3529-E778-7443-3970-D54AAF5C3679" otype="Table" vid="1E5147CD-98EE-EC6B-B4FA-719F8342DC8A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="39" y="225" width="170" height="123"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="812B2C74-76C0-E631-1655-CF34149CF468" otype="Table" vid="A9EDA77B-8861-CF69-26F9-8826E0D300CF">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="29" y="25" width="213" height="169"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="917C49E1-1B4E-ECE1-E719-C754EDD7A028" otype="Table" vid="A568BC74-2ACD-4C58-213B-34DD7B025241">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="327" y="25" width="205" height="136"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="0E28BF89-E796-CDAD-3FD3-86CAA91DFA16" otype="FKIndexAssociation" vid_source="1E5147CD-98EE-EC6B-B4FA-719F8342DC8A" vid_target="A9EDA77B-8861-CF69-26F9-8826E0D300CF">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="124" y="225"/>
+<point x="124" y="194"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="4C25345F-AFED-A437-2D84-3A4084CAC17C" otype="FKIndexAssociation" vid_source="A568BC74-2ACD-4C58-213B-34DD7B025241" vid_target="A9EDA77B-8861-CF69-26F9-8826E0D300CF">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="327" y="93"/>
+<point x="242" y="93"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

@@ -1,0 +1,77 @@
+CREATE TABLE bilets
+  (
+    ID_bilet   NUMBER (10) NOT NULL ,
+    price      NUMBER (5) NOT NULL ,
+    ID_session NUMBER (10) NOT NULL ,
+    ID_seat    NUMBER NOT NULL
+  ) ;
+ALTER TABLE bilets ADD CONSTRAINT bilet_PK PRIMARY KEY ( ID_bilet ) ;
+
+CREATE TABLE constants
+  (
+    factor_session  NUMBER (2) NOT NULL ,
+    factor_seat     NUMBER (2) NOT NULL ,
+    factor_time     NUMBER (2) NOT NULL ,
+    factor_week_day NUMBER (2) NOT NULL ,
+    price           NUMBER (5) NOT NULL
+  ) ;
+
+CREATE TABLE films
+  (
+    ID_film    NUMBER (10) NOT NULL ,
+    title_film VARCHAR2 (50) NOT NULL ,
+    duration   DATE NOT NULL ,
+    age_limit  NUMBER (2) NOT NULL ,
+    ID_genres  NUMBER (10) NOT NULL
+  ) ;
+ALTER TABLE films ADD CONSTRAINT films_PK PRIMARY KEY ( ID_film ) ;
+
+CREATE TABLE genres
+  (
+    ID_genres   NUMBER (10) NOT NULL ,
+    name_genres VARCHAR2 (50) NOT NULL
+  ) ;
+ALTER TABLE genres ADD CONSTRAINT ganre_PK PRIMARY KEY ( ID_genres ) ;
+
+CREATE TABLE rents_films
+  (
+    ID_rent         NUMBER (10) NOT NULL ,
+    start_date      DATE NOT NULL ,
+    end_date        DATE NOT NULL ,
+    box_office      NUMBER (50) NOT NULL ,
+    number_sessions NUMBER (3) NOT NULL ,
+    ID_film         NUMBER (10) NOT NULL
+  ) ;
+ALTER TABLE rents_films ADD CONSTRAINT rents_films_PK PRIMARY KEY ( ID_rent ) ;
+
+CREATE TABLE seats
+  (
+    ID_seat  NUMBER NOT NULL ,
+    num_seat NUMBER (3) NOT NULL ,
+    num_row  NUMBER (3) NOT NULL ,
+    status   CHAR (10) NOT NULL ,
+    free     CHAR (1) NOT NULL
+  ) ;
+ALTER TABLE seats ADD CONSTRAINT seats_PK PRIMARY KEY ( ID_seat ) ;
+
+CREATE TABLE sessions
+  (
+    ID_session        NUMBER (10) NOT NULL ,
+    date_session      DATE NOT NULL ,
+    week_day          NUMBER (1) NOT NULL ,
+    number_free_seats NUMBER (2) NOT NULL ,
+    time_sesion       DATE NOT NULL ,
+    factor_session    CHAR (1) NOT NULL ,
+    ID_rent           NUMBER (10) NOT NULL
+  ) ;
+ALTER TABLE sessions ADD CONSTRAINT session_PK PRIMARY KEY ( ID_session ) ;
+
+ALTER TABLE bilets ADD CONSTRAINT bilet_seats_FK FOREIGN KEY ( ID_seat ) REFERENCES seats ( ID_seat ) ;
+
+ALTER TABLE bilets ADD CONSTRAINT bilet_session_FK FOREIGN KEY ( ID_session ) REFERENCES sessions ( ID_session ) ;
+
+ALTER TABLE films ADD CONSTRAINT films_ganre_FK FOREIGN KEY ( ID_genres ) REFERENCES genres ( ID_genres ) ;
+
+ALTER TABLE rents_films ADD CONSTRAINT rents_films_films_FK FOREIGN KEY ( ID_film ) REFERENCES films ( ID_film ) ;
+
+ALTER TABLE sessions ADD CONSTRAINT session_rents_films_FK FOREIGN KEY ( ID_rent ) REFERENCES rents_films ( ID_rent ) ;

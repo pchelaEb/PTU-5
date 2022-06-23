@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="917C49E1-1B4E-ECE1-E719-C754EDD7A028" name="arch_rent_films">
+<createdBy>olpch</createdBy>
+<createdTime>2021-12-06 21:08:34 UTC</createdTime>
+<generatorID>A9094A70-0563-C3D6-C488-00B5BCF7DFE8</generatorID>
+<ownerDesignName>бдархив</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_rent" id="E63E9DBA-406F-AB73-1C89-AA2771CA18EF">
+<createdBy>olpch</createdBy>
+<createdTime>2021-12-06 21:08:34 UTC</createdTime>
+<generatorID>21BD6B76-1EA8-7B01-79AF-A127D4B6B7EA</generatorID>
+<ownerDesignName>бдархив</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="start_date" id="5CF8445F-3CA1-88A5-A2DE-01BCEC85FDD4">
+<createdBy>olpch</createdBy>
+<createdTime>2021-12-06 21:08:34 UTC</createdTime>
+<generatorID>AB15414E-483F-34F0-F5BC-D01AF61AB7F9</generatorID>
+<ownerDesignName>бдархив</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="end_date" id="C4D8584F-37B3-91BF-77C7-EB90DC2321AC">
+<createdBy>olpch</createdBy>
+<createdTime>2021-12-06 21:08:34 UTC</createdTime>
+<generatorID>8D0FE976-85F8-18B0-4672-D576F0EEFD66</generatorID>
+<ownerDesignName>бдархив</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="box_office" id="926ECF4F-AB70-D117-FB44-5C204F72F11E">
+<createdBy>olpch</createdBy>
+<createdTime>2021-12-06 21:08:34 UTC</createdTime>
+<generatorID>056C81DB-CE55-FD60-94FA-F0259335C8A0</generatorID>
+<ownerDesignName>бдархив</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>50</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="number_sessions" id="38574922-4BD9-8B13-AAC1-B793654A49F5">
+<createdBy>olpch</createdBy>
+<createdTime>2021-12-06 21:08:34 UTC</createdTime>
+<generatorID>AF6A4B87-976B-2349-F790-3DD2B292EB03</generatorID>
+<ownerDesignName>бдархив</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_film" id="0CC4BBE0-0AC7-13E3-D432-6404C3B356FC">
+<createdBy>olpch</createdBy>
+<createdTime>2021-12-06 21:08:34 UTC</createdTime>
+<generatorID>706E0177-4084-44F1-5C45-45B3177DDD4A</generatorID>
+<ownerDesignName>бдархив</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="89F98952-AD8A-F55C-E048-0DB39CEA0281" name="arch_rent_films_PK">
+<createdBy>olpch</createdBy>
+<createdTime>2021-12-06 21:08:34 UTC</createdTime>
+<generatorID>BFC3E5A0-0A6E-AC2C-AAF5-C75A323F4834</generatorID>
+<ownerDesignName>бдархив</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E63E9DBA-406F-AB73-1C89-AA2771CA18EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

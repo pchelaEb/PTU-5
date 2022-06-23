@@ -1,0 +1,38 @@
+CREATE TABLE arch_films
+  (
+    ID_film    NUMBER (10) NOT NULL ,
+    title_film VARCHAR2 (50) NOT NULL ,
+    duration   NUMBER (3) NOT NULL ,
+    age_limit  NUMBER (2) NOT NULL ,
+    ID_ganre   NUMBER (10) NOT NULL
+  ) ;
+ALTER TABLE arch_films ADD CONSTRAINT arch_films_PK PRIMARY KEY ( ID_film ) ;
+
+CREATE TABLE arch_rent_films
+  (
+    ID_rent         NUMBER (10) NOT NULL ,
+    start_date      DATE NOT NULL ,
+    end_date        DATE NOT NULL ,
+    box_office      NUMBER (50) NOT NULL ,
+    number_sessions NUMBER (3) NOT NULL ,
+    ID_film         NUMBER (10) NOT NULL
+  ) ;
+ALTER TABLE arch_rent_films ADD CONSTRAINT arch_rent_films_PK PRIMARY KEY ( ID_rent ) ;
+
+CREATE TABLE archive
+  (
+    ID_recording            NUMBER (10) NOT NULL ,
+    proceeds                NUMBER (10) NOT NULL ,
+    room_occupancy          NUMBER (3) NOT NULL ,
+    session_date            DATE NOT NULL ,
+    session_hour            NUMBER (2) NOT NULL ,
+    session_minute          NUMBER (2) NOT NULL ,
+    week_day                NUMBER (1) NOT NULL ,
+    arch_rent_films_ID_rent NUMBER (10) NOT NULL ,
+    arch_films_ID_film      NUMBER (10) NOT NULL
+  ) ;
+ALTER TABLE archive ADD CONSTRAINT archive_PK PRIMARY KEY ( ID_recording ) ;
+
+ALTER TABLE archive ADD CONSTRAINT archive_arch_films_FK FOREIGN KEY ( arch_films_ID_film ) REFERENCES arch_films ( ID_film ) ;
+
+ALTER TABLE archive ADD CONSTRAINT archive_arch_rent_films_FK FOREIGN KEY ( arch_rent_films_ID_rent ) REFERENCES arch_rent_films ( ID_rent ) ;

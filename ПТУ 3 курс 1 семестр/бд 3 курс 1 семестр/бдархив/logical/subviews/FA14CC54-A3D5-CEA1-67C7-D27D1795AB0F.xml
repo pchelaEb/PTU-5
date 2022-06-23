@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.logical.DPVLogical" name="Logical" id="FA14CC54-A3D5-CEA1-67C7-D27D1795AB0F">
+<createdBy>olpch</createdBy>
+<createdTime>2021-11-09 10:05:44 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>0</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="60D41878-B091-C564-0AC5-D427863E3FA0" otype="Entity" vid="B8CA054E-B7A8-6C95-CD96-E1183C2282DE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="29" y="25" width="213" height="169"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="9B682335-8324-1A1B-F024-EDFE42EEEBAA" otype="Entity" vid="3ADAFCE4-2B9F-75AD-D4DA-5C86AE0C2FBF">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="39" y="225" width="170" height="123"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="A9094A70-0563-C3D6-C488-00B5BCF7DFE8" otype="Entity" vid="C7E98B87-C008-28F6-CE60-54223DB34A31">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="327" y="25" width="205" height="136"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="601E0DEA-CEBD-809A-F28B-96EF2C0DCA98" otype="Relation" vid_source="C7E98B87-C008-28F6-CE60-54223DB34A31" vid_target="B8CA054E-B7A8-6C95-CD96-E1183C2282DE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="327" y="93"/>
+<point x="242" y="93"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="7C3B5A8D-3F23-CA40-1DB6-3A25C567D5DD" otype="Relation" vid_source="3ADAFCE4-2B9F-75AD-D4DA-5C86AE0C2FBF" vid_target="B8CA054E-B7A8-6C95-CD96-E1183C2282DE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="124" y="225"/>
+<point x="124" y="194"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>
